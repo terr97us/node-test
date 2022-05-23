@@ -23,6 +23,14 @@
         "env": []
     },
     {
+        "id": "b1d5c9741fab6f5b",
+        "type": "tab",
+        "label": "RSS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "7651c676.a76c78",
         "type": "subflow",
         "name": "Subflow 1",
@@ -1297,6 +1305,38 @@
         "statusCode": "",
         "headers": {},
         "x": 390,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "211daa7daff1c01e",
+        "type": "feedparse",
+        "z": "b1d5c9741fab6f5b",
+        "name": "Dailymirror",
+        "url": "https://www.dailymirror.lk/rss/caption_story/110",
+        "interval": "15",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "fe56558c3164e15a"
+            ]
+        ]
+    },
+    {
+        "id": "fe56558c3164e15a",
+        "type": "debug",
+        "z": "b1d5c9741fab6f5b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
         "y": 80,
         "wires": []
     }

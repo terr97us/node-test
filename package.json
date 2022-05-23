@@ -2,7 +2,11 @@
     "name": "a-test-node-red-project",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "devDependencies": {
+            "node-red-node-feedpaser": "1.2.3"
+        }
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
